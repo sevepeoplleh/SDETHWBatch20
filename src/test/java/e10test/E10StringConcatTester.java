@@ -1,6 +1,6 @@
-package e9test;
+package e10test;
 
-import org.example.e6.E6AirthmeticOperations;
+import org.example.e10.E10StringConcatenation;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,8 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-class E6AirthmeticOperationsTester {
+class E10StringConcatTester {
+
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
@@ -26,13 +27,16 @@ class E6AirthmeticOperationsTester {
     }
 
     @Test
-    void testArithmeticOperations() {
-        E6AirthmeticOperations.main(new String[]{});
-        String expectedOutput = "The multiplication of 8.2 with itself is equal to 67.24" + System.lineSeparator();
+    void testStringConcatenation() {
+        E10StringConcatenation.main(new String[]{});
+        String expectedOutput = "Java is the #1 programming language" + System.lineSeparator();
 
         String failureMessage = "The output does not match the expected values.\n" +
-                "Please ensure that your program creates a float variable with the value 8.2, multiplies it by itself, and prints the result.";
+                "Please ensure that your program creates a variable with the value 'Java',\n" +
+                "creates a variable with the value 'programming language', and prints them concatenated with the text ' is the #1 ' in between.";
 
         assertEquals(expectedOutput, outContent.toString(), failureMessage);
     }
+
+
 }

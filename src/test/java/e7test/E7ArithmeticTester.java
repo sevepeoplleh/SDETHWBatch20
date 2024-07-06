@@ -1,6 +1,6 @@
-package e10test;
+package e7test;
 
-import org.example.e7.E7AirthmeticOperations;
+import org.example.e7.E7ArithmeticOperations;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,7 +10,7 @@ import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
 
-class E7AirthmeticOperationsTester {
+class E7ArithmeticTester {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
@@ -27,7 +27,7 @@ class E7AirthmeticOperationsTester {
 
     @Test
     void testArithmeticOperations() {
-        E7AirthmeticOperations.main(new String[]{});
+        E7ArithmeticOperations.main(new String[]{});
         String expectedOutput = "300" + System.lineSeparator() +
                 "100" + System.lineSeparator() +
                 "20000" + System.lineSeparator() +
