@@ -1,7 +1,28 @@
 package org.example.e38;
 
+import java.util.Scanner;
+
 public class E38LogicalOperators {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Is it weekend? (true/false)");
+        boolean isWeekend = scan.nextBoolean();
+        System.out.println("Are you available? (true/false)");
+        boolean isAvailable = scan.nextBoolean();
+        String subject;
+
+        if (isWeekend && isAvailable) {
+            subject = "Java";
+        } else if (!isWeekend && isAvailable) {
+            subject = "manual testing";
+        } else {
+            subject = "no subject";
+        }
+
+        System.out.println("Today you will be learning " + subject);
+    }
+}
+
         // Create a Scanner object to read input
 
         // Print prompt for user to answer if it is the weekend
@@ -17,5 +38,4 @@ public class E38LogicalOperators {
         // Output: Today you will be learning ____
 
 
-    }
-}
+
