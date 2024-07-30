@@ -1,7 +1,6 @@
-package e28test;
+package e65Test;
 
-
-import org.example.e28.E28SimpleCalculatorElseIf;
+import org.example.e65.E65ForLoop;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,9 +11,8 @@ import java.io.InputStream;
 import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class E28SimpleCalculatorElseIfTest {
+class E65ForLoopTester {
 
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
     private final PrintStream originalOut = System.out;
@@ -32,17 +30,17 @@ class E28SimpleCalculatorElseIfTest {
     }
 
     @Test
-    void testProduct() {
-
-        // Simulate the program with an operator that should result in "The product is: 50"
-        String simulatedInput = "*\n5\n10\n";
+    void testForLoop() {
+        String simulatedInput = "7\n12\n20\n";
         System.setIn(new ByteArrayInputStream(simulatedInput.getBytes()));
 
-        E28SimpleCalculatorElseIf.main(new String[]{});
-        String expectedOutput = "The product is: 50.0" + System.lineSeparator();
+        E65ForLoop.main(new String[]{});
+        String expectedOutput = "In: 6 5 4 3 2 1 0 " + System.lineSeparator() +
+                                "In: 11 10 9 8 7 6 5 4 3 2 1 0 " + System.lineSeparator() +
+                                "In: 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0 " + System.lineSeparator();
 
-        String failureMessage = "The output does not match the expected values.\n" +
-                "Please ensure that your program performs the correct arithmetic operation based on the operator.";
+        String failureMessage = "The output does not match the expected values for the for loop.\n" +
+                "Please ensure that your program correctly uses the for loop to print a series of numbers in reverse based on user input.";
 
         assertEquals(expectedOutput, outContent.toString(), failureMessage);
     }
