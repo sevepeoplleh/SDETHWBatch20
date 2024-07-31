@@ -1,6 +1,6 @@
 package e46Test;
 
-import org.example.e46.E46WhileLoop;
+import org.example.e46.wE46WhileLoop;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -27,7 +27,7 @@ class E46WhileLoopTester {
 
     @Test
     void testWhileLoop() {
-        E46WhileLoop.main(new String[]{});
+        wE46WhileLoop.main(new String[]{});
         String expectedOutput = "0" + System.lineSeparator() +
                                 "1" + System.lineSeparator() +
                                 "2" + System.lineSeparator() +

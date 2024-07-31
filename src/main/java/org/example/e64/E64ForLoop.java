@@ -4,6 +4,19 @@ import java.util.Scanner;
 
 public class E64ForLoop {
     public static void main(String[] args) {
+
+        Scanner scan=new Scanner(System.in);
+
+        System.out.print("Int: ");
+
+        int end=scan.nextInt();
+
+        for (int i = 0; i <2 * end ; i++) {
+            System.out.print(i+" ");
+
+        }
+
+
         // Create a Scanner object to read input from the console
 
 

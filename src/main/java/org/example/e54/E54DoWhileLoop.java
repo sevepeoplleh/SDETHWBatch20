@@ -2,6 +2,15 @@ package org.example.e54;
 
 public class E54DoWhileLoop {
     public static void main(String[] args) {
+        int counter=10;
+
+        do{
+            System.out.println(counter);
+            counter--;
+        }
+        while(counter>0);
+
+        System.out.println("Countdown complete!");
         // Declare a counter variable and set it to 10
 
         // Use a do-while loop to create the countdown from 10 to 1
