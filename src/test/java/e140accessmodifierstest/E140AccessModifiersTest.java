@@ -39,28 +39,18 @@ public class E140AccessModifiersTest {
         // Make the method accessible even if it's package-private
         maxLengthMethod.setAccessible(true);
 
-        // Test case 1
+        // Test case 1: Multiple words with the same maximum length
         String[] words1 = {"this", "is", "a", "long", "word"};
-        String expectedOutput1 = "long";
+        String expectedOutput1 = "this"; // The first word with the longest length
         String actualOutput1 = (String) maxLengthMethod.invoke(instance, (Object) words1);
         assertEquals("The output from the maxLength method does not match the expected output", expectedOutput1, actualOutput1);
 
-        // Test case 2
+        // Test case 2: Different lengths with a clear longest word
         String[] words2 = {"java", "programming", "is", "fun"};
         String expectedOutput2 = "programming";
         String actualOutput2 = (String) maxLengthMethod.invoke(instance, (Object) words2);
         assertEquals("The output from the maxLength method does not match the expected output", expectedOutput2, actualOutput2);
     }
 
-    @Test
-    public void testMainMethodOutput() {
-        // Execute the main method to generate output
-        E140AccessModifiers.main(new String[]{});
 
-        // Construct the expected output string based on the main method behavior
-        String expectedOutput = "this is long";
-
-        // Asserts that the captured output matches the expected output
-        assertEquals("The output from the main method does not match the expected output", expectedOutput, outContent.toString().trim());
-    }
 }

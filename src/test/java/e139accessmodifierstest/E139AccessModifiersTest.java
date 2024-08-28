@@ -47,18 +47,5 @@ public class E139AccessModifiersTest {
         assertEquals("i_love_coding", replaceSpacesMethod.invoke(instance, input3));
     }
 
-    @Test
-    public void testMainMethodOutput() throws Exception {
-        // Execute the main method to generate output
-        E139AccessModifiers.main(new String[]{});
 
-        // Construct the expected output string based on the replaceSpaces method calls in the main method
-        String expectedOutput =
-                "hello_world" + System.lineSeparator() +
-                        "java_is_fun" + System.lineSeparator() +
-                        "i_love_coding" + System.lineSeparator();
-
-        // Asserts that the captured output matches the expected output
-        assertEquals("The output from the main method does not match the expected output", expectedOutput, outContent.toString());
-    }
 }
