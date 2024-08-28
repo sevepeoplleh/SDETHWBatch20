@@ -8,6 +8,12 @@ public class E75Arrays {
                 {4.0, 1.5, 6.1, 1.0},
                 {1.2, 3.1, 4.0, 1.6}
         };
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
+                System.out.print(numbers[i][j]+" ");
+            }
+            System.out.println();
+        }
 
         // Use nested loops to iterate through the 2D array and print each value
 

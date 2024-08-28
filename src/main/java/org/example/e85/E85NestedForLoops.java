@@ -2,6 +2,20 @@ package org.example.e85;
 
 public class E85NestedForLoops {
     public static void main(String[] args) {
+
+        for (int i = 1; i <= 7; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j+" ");
+            }
+            System.out.println();
+            }
+
+        for (int j = 6; j >= 1; j--) {
+            for (int k = 1; k <= j; k++) {
+                System.out.print(k + " ");
+            }
+            System.out.println();
+        }
         // Outer loop controls the number of lines in the upper part of the pattern
         // Use a loop that starts from 1 and goes up to 7 (inclusive)
         // Inside this loop, use another loop that starts from 1 and goes up to the current value of the outer loop

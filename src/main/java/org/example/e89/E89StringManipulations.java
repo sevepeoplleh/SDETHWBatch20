@@ -2,6 +2,10 @@ package org.example.e89;
 
 public class E89StringManipulations {
     public static void main(String[] args) {
+        String name="Timmy";
+        int length =name.length();
+
+        System.out.println(length);
         // Create a String variable named 'name' and assign the value "Timmy" to it
 
         // Use the length() method to find out how many characters are in the string

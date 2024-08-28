@@ -4,6 +4,17 @@ import java.util.Scanner;
 
 public class E99StringManipulations {
     public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+
+        System.out.println("Please enter a string:");
+        String a=scan.nextLine();
+        StringBuilder sb=new StringBuilder(a);
+        sb.reverse();
+        if(a.equals(sb.toString())){
+            System.out.println("true");
+        }else {
+            System.out.println("false");
+        }
         // Create a Scanner object to read input from the console
 
         // Prompt the user to input a string

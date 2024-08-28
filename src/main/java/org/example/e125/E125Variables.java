@@ -5,6 +5,10 @@ public class E125Variables {
     static int number;
 
     public static void main(String[] args) {
+        number=200;
+        E125Variables s1=new E125Variables();
+        System.out.println(E125Variables.number);
+        System.out.println(s1.number);
         // Access the static variable in the main method and assign a value to it
 
         // Create an object of the class

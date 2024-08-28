@@ -8,7 +8,16 @@ public class E80Arrays {
                 {1, -5, -2, 2},
                 {1, -2, 3, -4}
         };
+        int sum=0;
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                if (a[i][j]<0 && a[i][j]%2!=0){
+                    sum++;
 
+                }
+            }
+        }
+        System.out.println(sum);
         // Use nested loops to iterate through the 2D array and count the elements that are both negative and odd
 
         // Print the total count of elements that are both negative and odd

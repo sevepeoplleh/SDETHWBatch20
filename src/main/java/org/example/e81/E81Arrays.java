@@ -9,6 +9,21 @@ public class E81Arrays {
                 {1, -2, 3, -4}
         };
 
+        int sum=0;
+
+        for (int i = 0; i < a.length; i++) {
+            if (i % 2 == 0) {
+
+
+                for (int j = 0; j < a[i].length; j++) {
+                    if (j % 2 == 0) {
+                        sum+=a[i][j];
+                    }
+
+                }
+            }
+        }
+        System.out.println(sum);
         // Use nested loops to iterate through the 2D array and sum the elements that are on even indexes and even rows
 
         // Print the calculated sum

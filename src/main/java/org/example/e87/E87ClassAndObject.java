@@ -2,6 +2,17 @@ package org.example.e87;
 
 public class E87ClassAndObject {
     public static void main(String[] args) {
+        Car c1=new Car();
+        c1.carColor="Black";
+        c1.carMake="BMW";
+        c1.carYear=2019;
+
+        Car c2=new Car();
+        c2.carColor="White";
+        c2.carMake="Toyota";
+        c2.carYear=2018;
+        System.out.println("Car color is "+c1.carColor+" and car year is "+c1.carYear+" and car model is "+c1.carMake);
+        System.out.println("Car color is "+c2.carColor+" and car year is "+c2.carYear+" and car model is "+c2.carMake);
         // Create a class named 'Car'
 
         // Declare a String variable named 'carColor'

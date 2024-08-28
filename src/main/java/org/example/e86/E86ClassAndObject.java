@@ -2,6 +2,11 @@ package org.example.e86;
 
 public class E86ClassAndObject {
     public static void main(String[] args) {
+        Student s1=new Student();
+
+        s1.name="John";
+        s1.roll_no=2;
+        System.out.println("Name is "+s1.name+" and roll number is "+s1.roll_no);
         // Create a class named 'Student'
 
         // Declare a String variable named 'name' and an integer variable named 'roll_no'
